@@ -470,7 +470,7 @@ int main(int argc, char* argv[]) {
                                 jv_string("$ORIGIN/../lib/jq"),
                                 jv_string("$ORIGIN/lib"));
   }
-  jq_set_attr(jq, jv_string("JQ_LIBRARY_PATH"), lib_search_paths);
+  // jq_set_attr(jq, jv_string("JQ_LIBRARY_PATH"), lib_search_paths);
 
   char *origin = strdup(argv[0]);
   if (origin == NULL) {
